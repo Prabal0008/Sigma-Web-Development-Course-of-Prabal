@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of selectors</title>
+    <style>
+
+        /* Element Selector */
+        div
+        {
+            background-color: bisque;
+        }
+
+        /* Class Selector */
+        .red
+        {
+            background-color: rgb(27, 135, 217);
+        }
+
+        /* Id Selector */
+
+        #green
+        {
+            background-color: aquamarine;
+        }
+        /* Child Selector-direct child only */
+        div>p{
+            color: rgb(84, 154, 225);
+            background-color: rgb(58, 103, 15);
+        }
+
+        /* Descendent Selector */
+         div p {
+            color: rgb(84, 154, 225);
+            background-color: rgb(58, 103, 15);
+        }
+        /* universal selector */
+        *
+        {
+            margin: 0%;
+            padding: 0;
+        }
+
+        /* psuedocode selector */
+
+        /* visted link */
+        a:visited{
+            color: rgb(12, 193, 193);
+        }
+
+        /* unvisited link */
+         a:link
+        {
+            color: rgb(220, 13, 13);
+
+        } 
+
+     a:active{
+        background-color: darkorange;
+     }
+
+     a:hover{
+        background-color: darkmagenta;
+     }
+
+     p:first-child{
+        background-color: rgb(125, 92, 68);
+     }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Type of selectors present in CSS</h1>
+    <main>
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div class="red">I am a Div
+        <article>
+        <p>This is paragram</p>
+        </article>
+        </div>
+    <div id="green">I am aother Div</div>
+    <div>I am Div 2</div>
+    <a href="http://google.com">Go to Google</a>
+    <a href="http://Facebook2.com">Go to Facebook</a>
+</body>
+</html>
