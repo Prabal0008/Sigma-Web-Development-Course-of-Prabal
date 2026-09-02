@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Design Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        header{
+        position: sticky;
+        top: 0px; 
+      /*border: 2px solid black;*/
+       background-color: rgb(234, 103, 188);
+       height: 50px;
+       padding: 25px;
+       z-index: 1;
+       }
+
+     
+ 
+
+        .main {
+            border: 2px solid black;
+            height: 70vh;
+            margin: 20px;
+            background-color: green
+        }
+
+        .first {
+
+            position: relative;
+            left: 40px;
+            height: 500px;
+            width: 700px;
+            margin: 75px;
+            background-color: rgb(223, 90, 90);
+
+        }
+
+        .second {
+            position: relative;
+            left: 970px;
+            bottom: 582px;
+            height: 500px;
+            width: 700px;
+            margin: 75px;
+            margin-bottom: 0px;
+            background-color: blue;
+
+        }
+
+        .message {
+            height: 430px;
+            
+        } 
+
+        img{
+            display: inline-block;
+            height: 100px;
+            border: 10px solid rgb(3, 3, 93);
+            background-color: rgba(217, 255, 0, 0.657);
+            position: fixed;
+            left:1550px;
+            bottom:400px;
+        }
+
+        .mchild
+        {
+            border: 10px solid rgb(250, 239, 239);
+            border-radius: 60px;
+            padding: 100px;
+            text-align: center;
+            font-size: xx-large;
+            color: rgb(238, 233, 227);
+            margin: 0px;
+            position: relative;
+            width: 1000px;
+            /* height: 200px; */
+            left: 300px;
+
+        }
+
+        footer div {
+            border: 2px solid black;
+            height: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div></div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+
+    <div class="message">
+        <div class="mchild">Welcome to This Sigma Web Development Express"</div>   
+        <img src="image.svg" alt="" srcset=""> 
+    </div>
+
+    <footer>
+        <div></div>
+
+    </footer>
+
+</body>
+
+</html>
