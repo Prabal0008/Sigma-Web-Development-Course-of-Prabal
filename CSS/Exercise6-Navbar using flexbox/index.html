@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar based on flex box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            align-items: self-end;
+        }
+
+        .container {
+            background-color: rgb(199, 199, 199);
+            height: 90px;
+            margin: 0px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container li {
+            display: inline-block;
+            list-style: none;
+            padding: 10px;
+            font-size: 21px;
+        }
+
+         .container li:hover {
+          background-color: darkgrey;
+        
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+       
+        .footer {
+            display: flex;
+            align-items: center;
+        }
+
+        .download {
+            border-radius: 5px;
+            background-color: yellow;
+            padding: 10px;
+            margin: 20px;
+        }
+
+
+        .download:hover {
+            background-color: rgb(227, 191, 47);
+            padding: 10px;
+        }
+
+        .english:hover{
+            background-color: rgb(212, 219, 219);
+
+        }
+
+        .test{
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="content">
+                <li>Products <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Buy<i class="fa-solid fa-chevron-down"></i></li>
+                <li>Renew<i class="fa-solid fa-chevron-down"></i></li>
+                <li>Support<i class="fa-solid fa-chevron-down"></i></li>
+                <li>Learn<i class="fa-solid fa-chevron-down"></i></li>
+                <li>Company<i class="fa-solid fa-chevron-down"></i></li>
+            </div>
+            <div class="footer">
+                <div class="download"><a href="/">Download</a></div>
+               
+                <div class="english">
+                    <li>
+                     <i class="fa-solid fa-globe"></i>
+                    English
+                     
+                    </li>
+                    
+                </div>
+                <i class="fa-solid fa-magnifying-glass test"></i>
+
+            </div>
+            
+            
+
+        </div>
+    </header>
+
+</body>
+
+</html>
